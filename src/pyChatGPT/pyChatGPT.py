@@ -347,7 +347,6 @@ class ChatGPT:
         Credit to Rawa#8132 in the ChatGPT Hacking Discord server
         '''
         while self.__is_active:
-            self.logger.debug('Updating session...')
             payload = (
                 '{"event":"session","data":{"trigger":"getSession"},"timestamp":%d}'
                 % int(time.time())
